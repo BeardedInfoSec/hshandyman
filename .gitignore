@@ -1,0 +1,6 @@
+# Local browser-rendered review images
+site-preview*.png
+
+# OS metadata
+.DS_Store
+Thumbs.db

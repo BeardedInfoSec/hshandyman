@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&amp;family=Barlow+Condensed:wght@500;600;700;800&amp;family=Barlow:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:#191b1e;font-family:'Barlow',system-ui,sans-serif;color:#fff;-webkit-font-smoothing:antialiased}
+a{color:#f26a1b;text-decoration:none}
+a:hover{color:#ff8340}
+@keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
+@keyframes marq{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+@keyframes pulseRing{0%{box-shadow:0 0 0 0 rgba(242,106,27,.5)}70%{box-shadow:0 0 0 14px rgba(242,106,27,0)}100%{box-shadow:0 0 0 0 rgba(242,106,27,0)}}
+::selection{background:#f26a1b;color:#191b1e}
+input,textarea,select,button{font-family:inherit}
+</style>
+</helmet>
+
+<div ref="{{ rootRef }}" style="max-width:520px;margin:0 auto;background:#191b1e;overflow:hidden;position:relative">
+
+<!-- ===== STICKY HEADER ===== -->
+<div style="position:sticky;top:0;z-index:50;background:rgba(20,22,25,.92);backdrop-filter:blur(10px);border-bottom:1px solid rgba(255,255,255,.08)">
+  <div style="display:flex;align-items:center;justify-content:space-between;padding:12px 18px">
+    <a href="#top" style="font-family:'Archivo Black',sans-serif;font-size:13px;color:#fff;line-height:1.05;text-decoration:none">MUSIC CITY<br><span style="color:#f26a1b">LANDSCAPE &amp; REPAIRS</span></a>
+    <a href="tel:+19016336332" style="display:flex;align-items:center;gap:7px;background:#f26a1b;color:#191b1e;font-weight:700;font-size:13px;padding:9px 13px;border-radius:6px;animation:pulseRing 2.4s infinite">📞 Call</a>
+  </div>
+</div>
+
+<!-- ===== HERO ===== -->
+<div id="top" style="position:relative">
+  <img src="uploads/651188245_35477635118501867_3400437873868287602_n.jpg" alt="New cedar privacy fence" style="width:100%;height:520px;object-fit:cover;display:block;filter:brightness(.5)">
+  <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,22,25,.35) 0%,rgba(20,22,25,.35) 40%,#191b1e 100%)"></div>
+  <div style="position:absolute;inset:0;display:flex;flex-direction:column;justify-content:flex-end;padding:0 22px 30px">
+    <div style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:13px;letter-spacing:.2em;color:#f26a1b;text-transform:uppercase;margin-bottom:12px">Licensed &amp; Insured · Nashville, TN</div>
+    <h1 style="margin:0;font-family:'Archivo Black',sans-serif;font-size:44px;line-height:1;color:#fff;text-wrap:balance">ONE CALL.<br>YARD TO<br><span style="color:#f26a1b">ROOFLINE.</span></h1>
+    <p style="margin:16px 0 22px;font-size:16px;line-height:1.55;color:rgba(255,255,255,.8);max-width:400px">Lawn care, landscaping, hardscapes, and honest handyman repairs — done right the first time by a pro who treats your place like his own.</p>
+    <div style="display:flex;flex-direction:column;gap:10px">
+      <a href="#quote" style="background:#f26a1b;color:#191b1e;font-weight:700;font-size:16px;text-align:center;padding:16px;border-radius:8px">Get a free quote →</a>
+      <div style="display:flex;gap:10px">
+        <a href="sms:+19016336332" style="flex:1;border:1.5px solid rgba(255,255,255,.28);color:#fff;font-weight:600;font-size:14px;text-align:center;padding:13px;border-radius:8px">📱 Text us</a>
+        <a href="https://m.me/musiccitylandscapeandrepairsllc" target="_blank" style="flex:1;border:1.5px solid #4267B2;background:rgba(66,103,178,.18);color:#8fb0e8;font-weight:600;font-size:14px;text-align:center;padding:13px;border-radius:8px">💬 Messenger</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== TRUST MARQUEE ===== -->
+<div style="background:#f26a1b;overflow:hidden;padding:11px 0;white-space:nowrap">
+  <div style="display:inline-block;animation:marq 22s linear infinite;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:15px;letter-spacing:.08em;color:#191b1e;text-transform:uppercase">
+    <span style="padding:0 22px">★ Licensed &amp; Insured</span><span style="padding:0 22px">★ Faith &amp; Family Owned</span><span style="padding:0 22px">★ Honest Pricing</span><span style="padding:0 22px">★ Nashville &amp; Surrounding Areas</span><span style="padding:0 22px">★ Licensed &amp; Insured</span><span style="padding:0 22px">★ Faith &amp; Family Owned</span><span style="padding:0 22px">★ Honest Pricing</span><span style="padding:0 22px">★ Nashville &amp; Surrounding Areas</span>
+  </div>
+</div>
+
+<!-- ===== OUR PROMISE ===== -->
+<div style="padding:40px 22px 8px">
+  <div data-reveal style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:13px;letter-spacing:.2em;color:#f26a1b;text-transform:uppercase;margin-bottom:8px">Our promise</div>
+  <h2 data-reveal style="margin:0 0 14px;font-family:'Archivo Black',sans-serif;font-size:26px;line-height:1.05;color:#fff">HONEST WORK,<br>DONE RIGHT</h2>
+  <p data-reveal style="margin:0 0 22px;font-size:15px;line-height:1.6;color:rgba(255,255,255,.75)">Memphis-born and now proud to call Nashville home, we built this business on faith, hard work, and treating every customer the way we'd want to be treated. Fair quotes, no surprises, and a job we'd be glad to put our name on.</p>
+  <div style="display:flex;flex-direction:column;gap:10px">
+    <sc-for list="{{ promises }}" as="p" hint-placeholder-count="3">
+      <div data-reveal style="display:flex;align-items:center;gap:13px;background:#22252a;border:1px solid rgba(255,255,255,.06);border-radius:10px;padding:14px 15px">
+        <div style="width:40px;height:40px;border-radius:9px;background:#f26a1b;flex:none;display:flex;align-items:center;justify-content:center;font-size:19px">{{ p.icon }}</div>
+        <div><div style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:17px;letter-spacing:.02em;color:#fff;text-transform:uppercase;line-height:1.05">{{ p.title }}</div><div style="font-size:12.5px;color:rgba(255,255,255,.55);margin-top:2px;line-height:1.4">{{ p.sub }}</div></div>
+      </div>
+    </sc-for>
+  </div>
+</div>
+
+<!-- ===== SERVICES ===== -->
+<div id="services" style="padding:44px 22px 30px">
+  <div data-reveal style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:13px;letter-spacing:.2em;color:#f26a1b;text-transform:uppercase;margin-bottom:8px">What we do</div>
+  <h2 data-reveal style="margin:0 0 6px;font-family:'Archivo Black',sans-serif;font-size:28px;line-height:1.05;color:#fff">FROM FIX-IT TO<br>FULL CURB APPEAL</h2>
+  <p data-reveal style="margin:0 0 24px;font-size:13.5px;color:rgba(255,255,255,.5)">No HVAC, major plumbing, or major electrical — everything else, we've got covered.</p>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:11px">
+    <sc-for list="{{ services }}" as="s" hint-placeholder-count="8">
+      <div data-reveal style="background:#22252a;border:1px solid rgba(255,255,255,.06);border-radius:10px;padding:16px 14px">
+        <div style="font-size:24px;margin-bottom:10px">{{ s.icon }}</div>
+        <div style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:18px;letter-spacing:.02em;color:#fff;text-transform:uppercase;line-height:1.05">{{ s.name }}</div>
+        <div style="font-size:12.5px;color:rgba(255,255,255,.5);margin-top:4px;line-height:1.4">{{ s.sub }}</div>
+      </div>
+    </sc-for>
+  </div>
+</div>
+
+<!-- ===== BEFORE / AFTER SLIDER ===== -->
+<div style="padding:24px 22px 34px">
+  <div data-reveal style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:13px;letter-spacing:.2em;color:#f26a1b;text-transform:uppercase;margin-bottom:8px">Real results</div>
+  <h2 data-reveal style="margin:0 0 18px;font-family:'Archivo Black',sans-serif;font-size:26px;line-height:1.05;color:#fff">DRAG TO SEE<br>THE DIFFERENCE</h2>
+  <div data-reveal ref="{{ baRef }}" onMouseDown="{{ baStart }}" onTouchStart="{{ baStart }}" style="position:relative;width:100%;height:340px;border-radius:12px;overflow:hidden;border:1px solid rgba(255,255,255,.1);cursor:ew-resize;user-select:none;touch-action:none">
+    <img src="uploads/646757462_122276287892067764_7321596585685729588_n.jpg" alt="After — new door installed" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;pointer-events:none">
+    <div style="position:absolute;top:12px;right:12px;background:#f26a1b;color:#191b1e;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:13px;letter-spacing:.1em;padding:4px 10px;border-radius:4px">AFTER</div>
+    <div style="position:absolute;inset:0;overflow:hidden;pointer-events:none;width:{{ baPct }}%">
+      <img src="uploads/646813664_122276287958067764_4711660235307660513_n.jpg" alt="Before — old worn door" style="position:absolute;top:0;left:0;height:100%;width:{{ baImgW }}px;max-width:none;object-fit:cover">
+      <div style="position:absolute;top:12px;left:12px;background:rgba(20,22,25,.85);color:#fff;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:13px;letter-spacing:.1em;padding:4px 10px;border-radius:4px">BEFORE</div>
+    </div>
+    <div style="position:absolute;top:0;bottom:0;left:{{ baPct }}%;width:3px;background:#f26a1b;transform:translateX(-50%);pointer-events:none">
+      <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:38px;height:38px;border-radius:50%;background:#f26a1b;display:flex;align-items:center;justify-content:center;color:#191b1e;font-weight:700;font-size:15px">↔</div>
+    </div>
+  </div>
+  <div data-reveal style="margin-top:10px;font-size:12.5px;color:rgba(255,255,255,.45);text-align:center">Exterior door replacement · Nashville</div>
+</div>
+
+<!-- ===== GALLERY STRIP ===== -->
+<div style="padding:0 0 34px">
+  <div data-reveal style="padding:0 22px;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:13px;letter-spacing:.2em;color:#f26a1b;text-transform:uppercase;margin-bottom:14px">Recent jobs</div>
+  <div style="display:flex;gap:10px;overflow-x:auto;padding:0 22px 8px;scrollbar-width:none">
+    <sc-for list="{{ gallery }}" as="g" hint-placeholder-count="6">
+      <div style="flex:none;width:210px">
+        <img src="{{ g.src }}" alt="{{ g.cap }}" style="width:100%;height:260px;object-fit:cover;border-radius:10px;display:block">
+        <div style="font-size:12.5px;color:rgba(255,255,255,.55);margin-top:8px">{{ g.cap }}</div>
+      </div>
+    </sc-for>
+  </div>
+</div>
+
+<!-- ===== WHY US STATS ===== -->
+<div style="background:#22252a;padding:34px 22px;margin:0 0 4px">
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:22px 12px">
+    <sc-for list="{{ stats }}" as="st" hint-placeholder-count="4">
+      <div data-reveal>
+        <div style="font-family:'Archivo Black',sans-serif;font-size:34px;color:#f26a1b;line-height:1">{{ st.n }}</div>
+        <div style="font-size:13px;color:rgba(255,255,255,.7);margin-top:3px;line-height:1.35">{{ st.label }}</div>
+      </div>
+    </sc-for>
+  </div>
+</div>
+
+<!-- ===== TESTIMONIALS ===== -->
+<div style="padding:44px 22px 34px">
+  <div data-reveal style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:13px;letter-spacing:.2em;color:#f26a1b;text-transform:uppercase;margin-bottom:8px">Neighbors talk</div>
+  <h2 data-reveal style="margin:0 0 20px;font-family:'Archivo Black',sans-serif;font-size:26px;line-height:1.05;color:#fff">WHAT NASHVILLE<br>IS SAYING</h2>
+  <div data-reveal style="background:#f26a1b;border-radius:14px;padding:26px 22px;min-height:220px;position:relative;overflow:hidden">
+    <div style="font-family:'Archivo Black',sans-serif;font-size:56px;line-height:.6;color:#191b1e;opacity:.28">“</div>
+    <p style="margin:6px 0 16px;font-weight:600;font-size:18px;line-height:1.4;color:#191b1e">{{ activeReview.quote }}</p>
+    <div style="display:flex;align-items:center;justify-content:space-between">
+      <div>
+        <div style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:15px;letter-spacing:.06em;color:#191b1e;text-transform:uppercase">— {{ activeReview.name }}</div>
+        <div style="font-size:12px;color:rgba(25,27,30,.7)">{{ activeReview.area }}</div>
+      </div>
+      <div style="color:#191b1e;font-size:15px;letter-spacing:2px">★★★★★</div>
+    </div>
+    <div style="display:flex;gap:7px;margin-top:20px">
+      <sc-for list="{{ reviewDots }}" as="d" hint-placeholder-count="4">
+        <div onClick="{{ d.go }}" style="width:{{ d.w }};height:8px;border-radius:4px;background:{{ d.bg }};cursor:pointer;transition:all .3s"></div>
+      </sc-for>
+    </div>
+  </div>
+</div>
+
+<!-- ===== FACEBOOK FEED ===== -->
+<div style="padding:12px 22px 34px">
+  <div data-reveal style="display:flex;align-items:center;gap:9px;margin-bottom:16px">
+    <div style="width:26px;height:26px;border-radius:6px;background:#4267B2;color:#fff;font-weight:800;font-size:15px;display:flex;align-items:center;justify-content:center">f</div>
+    <span style="font-family:'Archivo Black',sans-serif;font-size:18px;color:#fff">FROM FACEBOOK</span>
+    <a href="https://www.facebook.com/musiccitylandscapeandrepairsllc" target="_blank" style="margin-left:auto;font-size:13px;color:#8fb0e8;font-weight:600">Follow →</a>
+  </div>
+  <div style="display:flex;flex-direction:column;gap:12px">
+    <sc-for list="{{ posts }}" as="p" hint-placeholder-count="2">
+      <div data-reveal style="background:#22252a;border:1px solid rgba(255,255,255,.07);border-radius:12px;overflow:hidden">
+        <div style="display:flex;align-items:center;gap:10px;padding:12px 14px">
+          <div style="width:34px;height:34px;border-radius:50%;background:#f26a1b;display:flex;align-items:center;justify-content:center;color:#191b1e;font-weight:800;font-size:12px">MC</div>
+          <div><div style="font-weight:700;font-size:13px;color:#fff">Music City Landscape &amp; Repairs</div><div style="font-size:11px;color:rgba(255,255,255,.45)">{{ p.time }}</div></div>
+        </div>
+        <div style="font-size:13.5px;line-height:1.5;color:rgba(255,255,255,.82);padding:0 14px 12px">{{ p.text }}</div>
+        <img src="{{ p.src }}" alt="Facebook post photo" style="width:100%;height:220px;object-fit:cover;display:block">
+        <div style="display:flex;gap:16px;padding:11px 14px;font-size:12.5px;color:rgba(255,255,255,.5)"><span>❤️ {{ p.likes }}</span><span>💬 {{ p.comments }}</span><a href="https://www.facebook.com/musiccitylandscapeandrepairsllc" target="_blank" style="margin-left:auto;color:#8fb0e8;font-weight:600">View on Facebook</a></div>
+      </div>
+    </sc-for>
+  </div>
+</div>
+
+<!-- ===== QUOTE FORM ===== -->
+<div id="quote" style="background:#22252a;padding:44px 22px 40px">
+  <div data-reveal style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:13px;letter-spacing:.2em;color:#f26a1b;text-transform:uppercase;margin-bottom:8px">Free · No obligation</div>
+  <h2 data-reveal style="margin:0 0 20px;font-family:'Archivo Black',sans-serif;font-size:28px;line-height:1.05;color:#fff">REQUEST YOUR<br>FREE QUOTE</h2>
+  <sc-if value="{{ submitted }}" hint-placeholder-val="{{ false }}">
+    <div style="background:#f26a1b;border-radius:12px;padding:28px 22px;text-align:center">
+      <div style="font-size:38px;margin-bottom:8px">✅</div>
+      <div style="font-family:'Archivo Black',sans-serif;font-size:20px;color:#191b1e">THANKS, {{ firstName }}!</div>
+      <p style="margin:8px 0 0;font-size:14px;color:#191b1e;line-height:1.5">We got your request and will reach out shortly. Need us faster? Text <a href="sms:+19016336332" style="color:#191b1e;text-decoration:underline;font-weight:700">(901) 633-6332</a>.</p>
+    </div>
+  </sc-if>
+  <sc-if value="{{ notSubmitted }}" hint-placeholder-val="{{ true }}">
+  <div style="display:flex;flex-direction:column;gap:11px">
+    <input value="{{ fName }}" onInput="{{ onName }}" placeholder="Your name" style="background:#191b1e;border:1px solid rgba(255,255,255,.14);border-radius:8px;padding:14px;color:#fff;font-size:15px;outline:none">
+    <input value="{{ fPhone }}" onInput="{{ onPhone }}" placeholder="Phone number" style="background:#191b1e;border:1px solid rgba(255,255,255,.14);border-radius:8px;padding:14px;color:#fff;font-size:15px;outline:none">
+    <select value="{{ fService }}" onChange="{{ onService }}" style="background:#191b1e;border:1px solid rgba(255,255,255,.14);border-radius:8px;padding:14px;color:#fff;font-size:15px;outline:none">
+      <option value="">What do you need?</option>
+      <sc-for list="{{ serviceNames }}" as="n" hint-placeholder-count="8"><option value="{{ n }}">{{ n }}</option></sc-for>
+    </select>
+    <textarea value="{{ fNotes }}" onInput="{{ onNotes }}" placeholder="Tell us about the job (optional)" rows="3" style="background:#191b1e;border:1px solid rgba(255,255,255,.14);border-radius:8px;padding:14px;color:#fff;font-size:15px;outline:none;resize:vertical"></textarea>
+    <button onClick="{{ submit }}" style="background:#f26a1b;color:#191b1e;font-weight:700;font-size:16px;padding:16px;border:none;border-radius:8px;cursor:pointer">Send request →</button>
+    <div style="text-align:center;font-size:13px;color:rgba(255,255,255,.5)">or reach us directly</div>
+    <div style="display:flex;gap:10px">
+      <a href="sms:+19016336332" style="flex:1;border:1.5px solid rgba(255,255,255,.28);color:#fff;font-weight:600;font-size:14px;text-align:center;padding:13px;border-radius:8px">📱 Text</a>
+      <a href="tel:+19016336332" style="flex:1;border:1.5px solid rgba(255,255,255,.28);color:#fff;font-weight:600;font-size:14px;text-align:center;padding:13px;border-radius:8px">📞 Call</a>
+      <a href="https://m.me/musiccitylandscapeandrepairsllc" target="_blank" style="flex:1;border:1.5px solid #4267B2;background:rgba(66,103,178,.18);color:#8fb0e8;font-weight:600;font-size:14px;text-align:center;padding:13px;border-radius:8px">💬 FB</a>
+    </div>
+  </div>
+  </sc-if>
+</div>
+
+<!-- ===== FOOTER ===== -->
+<div style="background:#101214;padding:30px 22px 34px">
+  <div style="font-family:'Archivo Black',sans-serif;font-size:16px;color:#fff;line-height:1.15;margin-bottom:6px">MUSIC CITY<br><span style="color:#f26a1b">LANDSCAPE &amp; REPAIRS LLC</span></div>
+  <p style="margin:0 0 18px;font-size:13px;color:rgba(255,255,255,.5);line-height:1.5">Licensed &amp; insured handyman and landscaping serving Nashville &amp; surrounding areas. No HVAC, major plumbing, or major electrical.</p>
+  <div style="display:flex;flex-direction:column;gap:9px;margin-bottom:20px">
+    <a href="tel:+19016336332" style="color:#fff;font-weight:600;font-size:15px">📞 (901) 633-6332</a>
+    <a href="sms:+19016336332" style="color:#fff;font-weight:600;font-size:15px">📱 Text (901) 633-6332</a>
+    <a href="https://www.facebook.com/musiccitylandscapeandrepairsllc" target="_blank" style="color:#8fb0e8;font-weight:600;font-size:15px">f  Follow us on Facebook</a>
+  </div>
+  <div style="border-top:1px solid rgba(255,255,255,.08);padding-top:16px;font-size:11.5px;color:rgba(255,255,255,.35)">© 2026 Music City Landscape &amp; Repairs LLC. All rights reserved.</div>
+</div>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { baPct: 50, baImgW: 400, active: 0, submitted: false, fName: "", fPhone: "", fService: "", fNotes: "", sentName: "" };
+
+  promises = [
+    {icon:"🤝",title:"Honest, Upfront Pricing",sub:"A fair quote and no surprise charges — ever."},
+    {icon:"✝️",title:"Faith-Driven Values",sub:"Integrity and respect on every job, big or small."},
+    {icon:"🛠️",title:"Right The First Time",sub:"We take pride in work we'd put our name on."}
+  ];
+
+  services = [
+    {icon:"🌿",name:"Lawn Care",sub:"Mowing, edging, cleanups"},
+    {icon:"🌳",name:"Landscaping",sub:"Planting, beds, mulch"},
+    {icon:"🧱",name:"Hardscapes",sub:"Patios, walkways, walls"},
+    {icon:"🪵",name:"Fence & Deck",sub:"Build, repair, stain"},
+    {icon:"🎨",name:"Paint & Drywall",sub:"Interior & exterior"},
+    {icon:"🔧",name:"Handyman Repairs",sub:"Doors, trim, fascia & more"},
+    {icon:"💦",name:"Pressure Washing",sub:"Drives, siding, decks"},
+    {icon:"🍂",name:"Gutter Cleaning",sub:"Clear, flush, secure"}
+  ];
+
+  reviews = [
+    {quote:"Fixed our fence, pressure-washed the drive, and rebuilt a flowerbed — all in one visit. Unreal work ethic.",name:"Dana R.",area:"East Nashville"},
+    {quote:"He replaced a rotted exterior door and it looks better than the day we moved in. On time, spotless cleanup.",name:"Jessica M.",area:"Bellevue"},
+    {quote:"Rebuilt the whole fascia after water damage. Honest pricing and he showed me every step. Highly recommend.",name:"Travis K.",area:"Donelson"},
+    {quote:"Best money I've spent on this house. He treats your place like it's his own. Already booked him again.",name:"Marcus & Lynn B.",area:"Antioch"}
+  ];
+
+  gallery = [
+    {src:"uploads/651188245_35477635118501867_3400437873868287602_n.jpg",cap:"New cedar privacy fence"},
+    {src:"uploads/646870572_122276988242067764_2113409320530741178_n.jpg",cap:"Fascia & gutter rebuild"},
+    {src:"uploads/652931433_35477634981835214_3251760029355082238_n.jpg",cap:"Exterior repaint & siding"},
+    {src:"uploads/646757462_122276287892067764_7321596585685729588_n.jpg",cap:"Exterior door replacement"},
+    {src:"uploads/646844184_122276288624067764_7716625510294826031_n.jpg",cap:"Clean, straight new gutters"},
+    {src:"uploads/646854319_122276288588067764_4471028385660139660_n.jpg",cap:"Cabinet & drawer repair"}
+  ];
+
+  stats = [
+    {n:"1st",label:"Time it's done right — no callbacks"},
+    {n:"100%",label:"Licensed & fully insured"},
+    {n:"7 days",label:"Quick quotes, flexible scheduling"},
+    {n:"5.0★",label:"Rating from happy neighbors"}
+  ];
+
+  posts = [
+    {time:"2 days ago",text:"Before & after on this exterior door swap in Nashville 🚪 Old worn slab out, bright new craftsman door in. Swipe the slider on our site to see it!",src:"uploads/646757462_122276287892067764_7321596585685729588_n.jpg",likes:47,comments:12},
+    {time:"1 week ago",text:"Wrapped up this cedar privacy fence line this week 🧱 Solid, straight, and built to last. Free quotes always — send us a message!",src:"uploads/651005009_35477635108501868_6597967307864840142_n.jpg",likes:63,comments:9}
+  ];
+
+  componentDidMount() {
+    this.reveal();
+    this.timer = setInterval(() => {
+      this.setState(s => ({ active: (s.active + 1) % this.reviews.length }));
+    }, 5000);
+    window.addEventListener('mousemove', this.baMove);
+    window.addEventListener('touchmove', this.baMove, {passive:false});
+    window.addEventListener('mouseup', this.baEnd);
+    window.addEventListener('touchend', this.baEnd);
+  }
+  componentWillUnmount() {
+    clearInterval(this.timer);
+    window.removeEventListener('mousemove', this.baMove);
+    window.removeEventListener('touchmove', this.baMove);
+    window.removeEventListener('mouseup', this.baEnd);
+    window.removeEventListener('touchend', this.baEnd);
+  }
+
+  reveal = () => {
+    const root = this.rootEl;
+    if (!root) { setTimeout(this.reveal, 60); return; }
+    const els = root.querySelectorAll('[data-reveal]');
+    els.forEach((el,i) => {
+      el.style.opacity = 0;
+      el.style.transform = 'translateY(26px)';
+      el.style.transition = 'opacity .65s cubic-bezier(.2,.6,.2,1), transform .65s cubic-bezier(.2,.6,.2,1)';
+    });
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.style.opacity = 1;
+          e.target.style.transform = 'translateY(0)';
+          io.unobserve(e.target);
+        }
+      });
+    }, {threshold:.15});
+    els.forEach(el => io.observe(el));
+  };
+
+  baStart = (e) => { this.dragging = true; this.baMove(e); };
+  baEnd = () => { this.dragging = false; };
+  baMove = (e) => {
+    if (!this.dragging || !this.baEl) return;
+    if (e.cancelable) e.preventDefault();
+    const r = this.baEl.getBoundingClientRect();
+    const x = (e.touches ? e.touches[0].clientX : e.clientX) - r.left;
+    let pct = Math.max(0, Math.min(100, (x / r.width) * 100));
+    this.setState({ baPct: pct, baImgW: r.width });
+  };
+
+  renderVals() {
+    const active = this.reviews[this.state.active];
+    return {
+      rootRef: (el) => { this.rootEl = el; },
+      baRef: (el) => { this.baEl = el; },
+      promises: this.promises,
+      services: this.services,
+      serviceNames: this.services.map(s => s.name),
+      gallery: this.gallery,
+      stats: this.stats,
+      posts: this.posts,
+      baPct: this.state.baPct,
+      baImgW: this.state.baImgW || (this.baEl ? this.baEl.getBoundingClientRect().width : 400),
+      baStart: this.baStart,
+      activeReview: active,
+      reviewDots: this.reviews.map((r,i) => ({
+        w: i === this.state.active ? "26px" : "8px",
+        bg: i === this.state.active ? "#191b1e" : "rgba(25,27,30,.35)",
+        go: () => this.setState({ active: i })
+      })),
+      submitted: this.state.submitted,
+      notSubmitted: !this.state.submitted,
+      firstName: this.state.sentName,
+      fName: this.state.fName, fPhone: this.state.fPhone, fService: this.state.fService, fNotes: this.state.fNotes,
+      onName: (e) => this.setState({fName:e.target.value}),
+      onPhone: (e) => this.setState({fPhone:e.target.value}),
+      onService: (e) => this.setState({fService:e.target.value}),
+      onNotes: (e) => this.setState({fNotes:e.target.value}),
+      submit: () => {
+        const name = (this.state.fName || "").trim();
+        if (!name) { alert("Please add your name so we know who to reach."); return; }
+        this.setState({ submitted: true, sentName: name.split(" ")[0] });
+      }
+    };
+  }
+}
+</script>
+</body>
+</html>
