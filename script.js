@@ -161,7 +161,7 @@
       if (!service) return showError("Please choose the service you need.", form.elements.service);
 
       const message = [
-        "Hi Music City Landscape & Repairs! I'd like a free quote.",
+        "Hi Hot Shot Handyman! I'd like a free quote.",
         `Name: ${name}`,
         `My phone: ${phone}`,
         `Service: ${service}`,

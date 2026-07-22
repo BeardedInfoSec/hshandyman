@@ -1,7 +1,9 @@
-# Handoff: Music City Landscape & Repairs — Marketing Website
+# Handoff: Hot Shot Handyman — Marketing Website
 
 ## Overview
-A single-page, mobile-first marketing website for **Music City Landscape & Repairs LLC**, a licensed & insured handyman + landscaping business serving Nashville, TN and surrounding areas (owner relocated from Memphis). The page's job is to convert local homeowners into leads via three primary actions: **request a free quote**, **text**, and **message on Facebook**. Content leans into a rugged, trustworthy, faith-and-family tone with real job photos.
+A single-page, mobile-first marketing website for **Hot Shot Handyman**, a licensed & insured handyman + landscaping business serving Nashville, TN and surrounding areas (owner relocated from Memphis). The page's job is to convert local homeowners into leads via three primary actions: **request a free quote**, **text**, and **message on Facebook**. Content leans into a rugged, trustworthy, faith-and-family tone with real job photos.
+
+> **Brand update:** The company was renamed from Music City Landscape & Repairs to Hot Shot Handyman in July 2026. The `.dc.html` file remains an archival reference for the original design; `index.html` contains the current production branding.
 
 Scope of the current design: a single scrolling page. There is an appetite (not yet built) for: a sticky bottom action bar, service-area section, "how it works" steps, FAQ, gallery lightbox, live Facebook feed, and SEO metadata — see **Recommended Next Additions** at the end.
 
@@ -16,7 +18,7 @@ The file in this bundle (`Music City Landscape and Repairs.dc.html`) is a **desi
 ## Layout & Sections (top to bottom)
 The whole page is a vertical stack inside a centered column, `max-width: 520px; margin: 0 auto; background: #191b1e; overflow: hidden`.
 
-1. **Sticky Header** — `position: sticky; top: 0; z-index: 50`, translucent dark bg `rgba(20,22,25,.92)` with `backdrop-filter: blur(10px)`, 1px bottom border `rgba(255,255,255,.08)`. Left: two-line wordmark "MUSIC CITY / LANDSCAPE & REPAIRS" (second line orange). Right: orange "📞 Call" button linking `tel:+19016336332`, with a pulsing ring animation (`pulseRing`, 2.4s infinite).
+1. **Sticky Header** — `position: sticky; top: 0; z-index: 50`, translucent dark bg `rgba(20,22,25,.92)` with `backdrop-filter: blur(10px)`, 1px bottom border `rgba(255,255,255,.08)`. Left: Hot Shot Handyman logo and wordmark. Right: orange "📞 Call" button linking `tel:+19016336332`, with a pulsing ring animation (`pulseRing`, 2.4s infinite).
 
 2. **Hero** — full-bleed photo (`651188245…jpg`, cedar fence) at `height: 520px; object-fit: cover; filter: brightness(.5)`, with a top-to-bottom gradient overlay fading to `#191b1e`. Content bottom-aligned, `padding: 0 22px 30px`:
    - Eyebrow: "Licensed & Insured · Nashville, TN" (Barlow Condensed 700, 13px, letter-spacing .2em, uppercase, orange).
@@ -61,7 +63,7 @@ The whole page is a vertical stack inside a centered column, `max-width: 520px; 
 
 11. **Quote Form** — `id="quote"`, bg `#22252a`, `padding: 44px 22px 40px`. Eyebrow "Free · No obligation", `<h2>` "REQUEST YOUR / FREE QUOTE". Fields (dark inputs, border `rgba(255,255,255,.14)`, radius 8px): **name** (text), **phone** (text), **service** (`<select>` populated from the 8 service names + a "What do you need?" placeholder option), **notes** (textarea, optional). Orange "Send request →" submit button. Below: "or reach us directly" + a 3-button row (📱 Text, 📞 Call, 💬 FB). On submit with a non-empty name, the form is replaced by a success card (✅, "THANKS, {firstName}!", follow-up text with the phone number). See **State Management** + **Interactions** — note this is currently a **client-only** success state with **no backend**; you must wire real submission.
 
-12. **Footer** — bg `#101214`, `padding: 30px 22px 34px`. Wordmark, description ("Licensed & insured handyman and landscaping serving Nashville & surrounding areas. No HVAC, major plumbing, or major electrical."), stacked contact links (📞 call, 📱 text, f Facebook), thin divider, "© 2026 Music City Landscape & Repairs LLC. All rights reserved."
+12. **Footer** — bg `#101214`, `padding: 30px 22px 34px`. Logo, description ("Licensed & insured handyman and landscaping serving Nashville & surrounding areas. No HVAC, major plumbing, or major electrical."), stacked contact links (📞 call, 📱 text, f Facebook), thin divider, and copyright.
 
 ## Interactions & Behavior
 
@@ -140,10 +142,10 @@ Other uploaded photos (roof/fascia rot, repaints, more fence shots) are availabl
 
 **Icons** are currently emoji (🌿🌳🧱🪵🎨🔧💦🍂🤝✝️🛠️📞📱💬❤️). Fine to keep, or swap for a proper icon set (Lucide/Feather) for a more polished look — keep the ✝️ faith cue.
 
-**No logo** was provided — the header uses a text wordmark. Drop in a real logo if the owner has one.
+The approved logo is provided as `hot-shot-logo.png` with an optimized web version at `hot-shot-logo-web.png`.
 
 ## Business Facts (verified with client)
-- **Name:** Music City Landscape & Repairs LLC
+- **Name:** Hot Shot Handyman
 - **Phone (call & text):** **(901) 633-6332** — correct as-is; it's a Memphis number (owner relocated), do not "fix" it.
 - **Facebook:** https://www.facebook.com/musiccitylandscapeandrepairsllc  ·  Messenger: https://m.me/musiccitylandscapeandrepairsllc
 - **Service area:** Nashville, TN & surrounding areas.
