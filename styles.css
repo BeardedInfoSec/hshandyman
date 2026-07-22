@@ -101,6 +101,7 @@ h2 { margin: 0; font-size: clamp(37px, 5vw, 64px); line-height: .98; }
 .service-card:hover { border-color: rgba(242,106,27,.55); background: var(--surface-light); transform: translateY(-4px); }
 .service-card > span { display: block; margin-bottom: 41px; color: var(--orange); font-family: var(--display); font-size: 13px; }
 .service-card h3 { font-size: 21px; }
+.service-card-wide { grid-column: span 2; }
 
 .work-section { padding-bottom: 70px; }
 .work-layout { display: grid; grid-template-columns: .7fr 1.3fr; align-items: center; gap: clamp(40px, 8vw, 100px); }
