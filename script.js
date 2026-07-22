@@ -123,6 +123,12 @@
     const form = document.querySelector("#quote-form");
     if (!form) return;
 
+    document.querySelectorAll(".service-card[data-service]").forEach((card) => {
+      card.addEventListener("click", () => {
+        form.elements.service.value = card.dataset.service;
+      });
+    });
+
     const error = document.querySelector("#form-error");
     const requiredFields = [...form.querySelectorAll("[required]")];
 
