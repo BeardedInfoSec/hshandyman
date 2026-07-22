@@ -168,7 +168,7 @@
         notes ? `Job details: ${notes}` : ""
       ].filter(Boolean).join("\n");
 
-      window.location.href = `sms:+19016336332?&body=${encodeURIComponent(message)}`;
+      window.location.href = `sms:+16156336489?&body=${encodeURIComponent(message)}`;
     });
   }
 

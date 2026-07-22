@@ -18,13 +18,13 @@ The file in this bundle (`Music City Landscape and Repairs.dc.html`) is a **desi
 ## Layout & Sections (top to bottom)
 The whole page is a vertical stack inside a centered column, `max-width: 520px; margin: 0 auto; background: #191b1e; overflow: hidden`.
 
-1. **Sticky Header** — `position: sticky; top: 0; z-index: 50`, translucent dark bg `rgba(20,22,25,.92)` with `backdrop-filter: blur(10px)`, 1px bottom border `rgba(255,255,255,.08)`. Left: Hot Shot Handyman logo and wordmark. Right: orange "📞 Call" button linking `tel:+19016336332`, with a pulsing ring animation (`pulseRing`, 2.4s infinite).
+1. **Sticky Header** — `position: sticky; top: 0; z-index: 50`, translucent dark bg `rgba(20,22,25,.92)` with `backdrop-filter: blur(10px)`, 1px bottom border `rgba(255,255,255,.08)`. Left: Hot Shot Handyman logo and wordmark. Right: orange "📞 Call" button linking `tel:+16156336489`, with a pulsing ring animation (`pulseRing`, 2.4s infinite).
 
 2. **Hero** — full-bleed photo (`651188245…jpg`, cedar fence) at `height: 520px; object-fit: cover; filter: brightness(.5)`, with a top-to-bottom gradient overlay fading to `#191b1e`. Content bottom-aligned, `padding: 0 22px 30px`:
    - Eyebrow: "Licensed & Insured · Nashville, TN" (Barlow Condensed 700, 13px, letter-spacing .2em, uppercase, orange).
    - `<h1>` Archivo Black, 44px, line-height 1: "ONE CALL. / YARD TO / ROOFLINE." ("ROOFLINE." in orange).
    - Paragraph, 16px, `rgba(255,255,255,.8)`, max-width 400px.
-   - Primary CTA "Get a free quote →" (full-width orange button → `#quote`). Below it a 2-button row: "📱 Text us" (`sms:+19016336332`) and "💬 Messenger" (`https://m.me/musiccitylandscapeandrepairsllc`, blue-tinted).
+   - Primary CTA "Get a free quote →" (full-width orange button → `#quote`). Below it a 2-button row: "📱 Text us" (`sms:+16156336489`) and "💬 Messenger" (`https://m.me/musiccitylandscapeandrepairsllc`, blue-tinted).
 
 3. **Trust Marquee** — orange band `#f26a1b`, single line scrolling right-to-left infinitely (`marq`, 22s linear). Content (Barlow Condensed 700, uppercase, dark text), duplicated once for seamless loop: `★ Licensed & Insured · ★ Faith & Family Owned · ★ Honest Pricing · ★ Nashville & Surrounding Areas`.
 
@@ -33,19 +33,18 @@ The whole page is a vertical stack inside a centered column, `max-width: 520px; 
    - ✝️ **Faith-Driven Values** — "Integrity and respect on every job, big or small."
    - 🛠️ **Right The First Time** — "We take pride in work we'd put our name on."
 
-5. **Services** — `id="services"`, `padding: 44px 22px 30px`. Eyebrow "What we do", `<h2>` "FROM FIX-IT TO / FULL CURB APPEAL", note "No HVAC, major plumbing, or major electrical — everything else, we've got covered." Then a 2-column grid (`gap: 11px`) of 8 cards (icon, uppercase name in Barlow Condensed 18px, subtitle 12.5px muted):
+5. **Services** — `id="services"`, `padding: 44px 22px 30px`. Eyebrow "What we do", `<h2>` "FROM FIX-IT TO / FULL CURB APPEAL", note "No HVAC, major plumbing, or major electrical — everything else, we've got covered." Then a 2-column grid (`gap: 11px`) of 7 cards (icon, uppercase name in Barlow Condensed 18px, subtitle 12.5px muted):
    - 🌿 Lawn Care — Mowing, edging, cleanups
    - 🌳 Landscaping — Planting, beds, mulch
    - 🧱 Hardscapes — Patios, walkways, walls
    - 🪵 Fence & Deck — Build, repair, stain
-   - 🎨 Paint & Drywall — Interior & exterior
    - 🔧 Handyman Repairs — Doors, trim, fascia & more
    - 💦 Pressure Washing — Drives, siding, decks
    - 🍂 Gutter Cleaning — Clear, flush, secure
 
 6. **Before/After Slider** — `padding: 24px 22px 34px`. Eyebrow "Real results", `<h2>` "DRAG TO SEE / THE DIFFERENCE". Interactive comparison: a 100%-wide, 340px-tall rounded container (`cursor: ew-resize`). The **after** image (`646757462…jpg`, new white door) fills the container. An **overlay div** clipped to `width: {pct}%` reveals the **before** image (`646813664…jpg`, old black door); the before `<img>` inside is sized to the container's full pixel width (`max-width: none`) so it doesn't squish as the clip narrows. A 3px orange divider sits at `left: {pct}%` with a round 38px orange knob (↔). "BEFORE" and "AFTER" pill labels top-left/top-right. Caption below: "Exterior door replacement · Nashville". See **Interactions** for drag math.
 
-7. **Gallery Strip** — horizontally scrolling row (`overflow-x: auto`, hidden scrollbar) of 6 cards, each 210px wide with a 260px image + caption. Photos + captions listed in **Assets**.
+7. **Gallery Strip** — horizontally scrolling row (`overflow-x: auto`, hidden scrollbar) of 5 cards, each 210px wide with a 260px image + caption. Photos + captions listed in **Assets**.
 
 8. **Stats Band** — bg `#22252a`, `padding: 34px 22px`. 2-column grid, big orange Archivo Black numbers (34px) + label:
    - **1st** — Time it's done right — no callbacks
@@ -134,7 +133,6 @@ All images are real client job photos, currently in the project's `uploads/` fol
 | `646813664_122276287958067764_4711660235307660513_n.jpg` | Before/after (BEFORE) | Old worn exterior door |
 | `646870572_122276988242067764_2113409320530741178_n.jpg` | Gallery | Fascia & gutter rebuild |
 | `652931433_35477634981835214_3251760029355082238_n.jpg` | Gallery | Exterior repaint & siding |
-| `646844184_122276288624067764_7716625510294826031_n.jpg` | Gallery | Clean, straight new gutters |
 | `646854319_122276288588067764_4471028385660139660_n.jpg` | Gallery | Cabinet & drawer repair |
 | `651005009_35477635108501868_6597967307864840142_n.jpg` | FB post 2 | Completed cedar fence line |
 
@@ -146,7 +144,8 @@ The approved logo is provided as `hot-shot-logo.png` with an optimized web versi
 
 ## Business Facts (verified with client)
 - **Name:** Hot Shot Handyman
-- **Phone (call & text):** **(901) 633-6332** — correct as-is; it's a Memphis number (owner relocated), do not "fix" it.
+- **Phone (call & text):** **(615) 633-6489** — Nashville business line (updated July 2026; replaced the old Memphis cell 901-633-6332).
+- **Does NOT offer paint & drywall** — he can do it but doesn't want the work; removed from services (July 2026).
 - **Facebook:** https://www.facebook.com/musiccitylandscapeandrepairsllc  ·  Messenger: https://m.me/musiccitylandscapeandrepairsllc
 - **Service area:** Nashville, TN & surrounding areas.
 - **Explicitly does NOT do:** HVAC, major plumbing, major electrical. Keep this disclaimer visible.
