@@ -152,6 +152,9 @@ h2 { margin: 0; font-size: clamp(37px, 5vw, 64px); line-height: .98; }
 .review-cta { margin-top: 34px; padding-top: 24px; border-top: 1px solid var(--border); }
 .review-cta > span { display: block; margin-bottom: 14px; color: var(--faint); font-family: var(--condensed); font-size: 13px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
 .review-cta .button-outline { min-height: 46px; padding: 10px 18px; font-size: 14px; }
+.review-cta-buttons { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 18px; }
+.review-fb-link { color: #b6cdf4; font-size: 14px; font-weight: 600; text-decoration: none; }
+.review-fb-link:hover { color: #fff; text-decoration: underline; }
 .testimonial { position: relative; min-height: 330px; padding: clamp(28px, 5vw, 54px); overflow: hidden; border-radius: 16px; background: var(--orange); color: var(--bg); }
 .quote-mark { position: absolute; top: 5px; right: 28px; color: rgba(25,27,30,.14); font-family: Georgia, serif; font-size: 180px; line-height: 1; }
 .testimonial blockquote { position: relative; margin: 0; }
