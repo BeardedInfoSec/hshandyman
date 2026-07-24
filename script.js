@@ -51,24 +51,9 @@
 
   const reviews = [
     {
-      quote: "Fixed our fence, pressure-washed the drive, and rebuilt a flowerbed—all in one visit. Unreal work ethic.",
-      name: "— Dana R.",
-      area: "East Nashville"
-    },
-    {
-      quote: "He replaced a rotted exterior door and it looks better than the day we moved in. On time, spotless cleanup.",
-      name: "— Jessica M.",
-      area: "Bellevue"
-    },
-    {
-      quote: "Rebuilt the whole fascia after water damage. Honest pricing and he showed me every step. Highly recommend.",
-      name: "— Travis K.",
-      area: "Donelson"
-    },
-    {
-      quote: "Best money I've spent on this house. He treats your place like it's his own. Already booked him again.",
-      name: "— Marcus & Lynn B.",
-      area: "Antioch"
+      quote: "Very professional. I've used him multiple times over the years for everything from laying flooring to repairs in my shop.",
+      name: "— Repeat customer",
+      area: "Nashville area"
     }
   ];
 
@@ -99,24 +84,26 @@
       timer = window.setInterval(() => render((active + 1) % reviews.length), 5000);
     };
 
-    reviews.forEach((review, index) => {
-      const button = document.createElement("button");
-      button.type = "button";
-      button.className = "review-dot";
-      button.setAttribute("aria-label", `Show testimonial ${index + 1} from ${review.name.replace("— ", "")}`);
-      button.addEventListener("click", () => {
-        render(index);
-        startTimer();
+    if (reviews.length > 1) {
+      reviews.forEach((review, index) => {
+        const button = document.createElement("button");
+        button.type = "button";
+        button.className = "review-dot";
+        button.setAttribute("aria-label", `Show testimonial ${index + 1} from ${review.name.replace("— ", "")}`);
+        button.addEventListener("click", () => {
+          render(index);
+          startTimer();
+        });
+        dots.appendChild(button);
       });
-      dots.appendChild(button);
-    });
 
-    section.addEventListener("mouseenter", () => window.clearInterval(timer));
-    section.addEventListener("mouseleave", startTimer);
-    section.addEventListener("focusin", () => window.clearInterval(timer));
-    section.addEventListener("focusout", startTimer);
+      section.addEventListener("mouseenter", () => window.clearInterval(timer));
+      section.addEventListener("mouseleave", startTimer);
+      section.addEventListener("focusin", () => window.clearInterval(timer));
+      section.addEventListener("focusout", startTimer);
+      startTimer();
+    }
     render(0);
-    startTimer();
   }
 
   function initQuoteForm() {
